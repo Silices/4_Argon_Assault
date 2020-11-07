@@ -13,6 +13,7 @@
           <e p="ReadMe.txt" t="Include" />
         </e>
         <e p="MusicPlayer.cs" t="Include" />
+        <e p="Player.cs" t="Include" />
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
             <e p="Scripts" t="Include">
