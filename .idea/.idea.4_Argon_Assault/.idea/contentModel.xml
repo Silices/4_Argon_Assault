@@ -254,9 +254,11 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CollisionHandler.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
           <e p="MusicPlayer.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
+          <e p="SelfDestructor.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

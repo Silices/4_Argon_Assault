@@ -22,15 +22,24 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float controlRollFactor = -30f;
     
     float xThrow, yThrow;
-
+    private bool isControlEnabled = true;
 
     // Update is called once per frame
     void Update()
     {
-        ProcessRotation();
-        ProcessTranslation();
+        if(isControlEnabled)
+        {
+            ProcessRotation();
+            ProcessTranslation();
+        }
     }
 
+    
+    void OnPlayerDeath() // called by string reference
+    {
+        print("Controls frozen");
+        isControlEnabled = false;
+    }
     private void ProcessRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor ;
