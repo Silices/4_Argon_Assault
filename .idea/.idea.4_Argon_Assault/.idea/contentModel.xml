@@ -252,6 +252,7 @@
             </e>
           </e>
         </e>
+        <e p="ScoreBoard.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="CollisionHandler.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
