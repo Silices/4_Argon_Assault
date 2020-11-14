@@ -1,30 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    [Tooltip("In ms^-1")][SerializeField] private float speed = 20f;
-    [Tooltip("In ms")][SerializeField] private float xRange = 5.5f;
-    [Tooltip("In ms")][SerializeField] private float yRange = 3f;
     
+    [Header("General")]
+    [Tooltip("In ms^-1")][SerializeField] private float controlSpeed = 10f;
+    [Tooltip("In ms")][SerializeField] private float xRange = 8f;
+    [Tooltip("In ms")][SerializeField] private float yRange = 4.5f;
+    
+    [Header("Screen-position Based")]
     [SerializeField] private float positionPitchFactor = -5f;
-    [SerializeField] private float controlPitchFactor = -20f;
+    [SerializeField] private float positionYawFactor = 6.5f;
     
-    [SerializeField] private float positionYawFactor = 5f;
-    [SerializeField] private float controlRollFactor = -20f;
+    [Header("Control-throw Based")]
+    [SerializeField] private float controlPitchFactor = -30f;
+    [SerializeField] private float controlRollFactor = -30f;
     
     float xThrow, yThrow;
-    
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -52,8 +50,8 @@ public class Player : MonoBehaviour
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
 
-        float xOffset = xThrow * speed * Time.deltaTime;
-        float yOffset = yThrow * speed * Time.deltaTime;
+        float xOffset = xThrow * controlSpeed * Time.deltaTime;
+        float yOffset = yThrow * controlSpeed * Time.deltaTime;
 
         float rawXPos = transform.localPosition.x + xOffset;
         float rawYPos = transform.localPosition.y + yOffset;
