@@ -24,8 +24,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SelfDestructor.cs" />
-        <option value="$PROJECT_DIR$/Assets/ScoreBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScoreBoard.cs" />
       </list>
     </option>
   </component>
