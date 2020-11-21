@@ -19,13 +19,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Asset Packs/Standard Assets/Utility/WaypointCircuit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CollisionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SelfDestructor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/ScoreBoard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -76,6 +76,8 @@
       <workItem from="1604773599588" duration="6246000" />
       <workItem from="1605310420968" duration="4340000" />
       <workItem from="1605361763211" duration="7167000" />
+      <workItem from="1605727473158" duration="692000" />
+      <workItem from="1605982059606" duration="1079000" />
     </task>
     <servers />
   </component>
